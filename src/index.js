@@ -1,10 +1,30 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+const App = () => {
+  const [clicks, setClicks] = useState({
+    left: 0, right: 0
+  })
 
-const App = () => ( 
-  <div>
-    <p>Hello world</p> 
-  </div>
-)
+  const handleLeftClick = () => {
+    const newClicks = { 
+      left: clicks.left + 1, 
+      right: clicks.right 
+    }
+    setClicks(newClicks)
+  }
 
-ReactDOM.render(<App />, document.getElementById('root')) 
+  const handleRightClick = () => {
+    const newClicks = { 
+      left: clicks.left, 
+      right: clicks.right + 1 
+    }
+    setClicks(newClicks)
+  }
+
+  return (
+    <div>
+      {clicks.left}
+      <button onClick={handleLeftClick}>left</button>
+      <button onClick={handleRightClick}>right</button>
+      {clicks.right}
+    </div>
+  )
+}
