@@ -14,7 +14,6 @@ const App = () => {
     setLeft(left + 1)
   }
 
-
   const handleRightClick = () => {
     setAll(allClicks.concat('R'))
     setRight(right + 1)
