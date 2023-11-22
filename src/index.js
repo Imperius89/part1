@@ -8,12 +8,10 @@ const App = () => {
 
   const [allClicks, setAll] = useState([])
 
-
   const handleLeftClick = () => {
     setAll(allClicks.concat('L'))
     setLeft(left + 1)
   }
-
   const handleRightClick = () => {
     setAll(allClicks.concat('R'))
     setRight(right + 1)
@@ -25,7 +23,6 @@ const App = () => {
       <button onClick={handleLeftClick}>left</button>
       <button onClick={handleRightClick}>right</button>
       {right}
-
       <p>{allClicks.join(' ')}</p>
     </div>
   )
