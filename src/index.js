@@ -7,10 +7,9 @@ const App = () => {
 
 
   const hello = (who) => {
-    const handler = () => {
+    return () => {
       console.log('hello', who)
     }
-    return handler
   }
 
   return (
