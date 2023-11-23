@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {useState} from 'react'
 
+
 const App = () => {
   const [left, setLeft] = useState(0)
   const [right, setRight] = useState(0)
