@@ -5,15 +5,15 @@ import {useState} from 'react'
 const App = () => {
   const [value, setValue] = useState(10)
 
+  const handleClick = () =>
+    console.log('clicked the button')
+
   return (
     <div>
       {value}
-      <button onClick={() => console.log('clicked the button')}>
-        button
-      </button>
+      <button onClick={handleClick}>button</button>
     </div>
   )
 }
-
 
 ReactDOM.render(<App />, document.getElementById('root')) 
