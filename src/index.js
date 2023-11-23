@@ -6,11 +6,9 @@ const App = () => {
   const [value, setValue] = useState(10)
 
 
-  const hello = (who) =>
-   () => {
+  const hello = (who) => () => {
       console.log('hello', who)
     }
-
 
   return (
     <div>
