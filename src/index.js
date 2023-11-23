@@ -8,7 +8,9 @@ const App = () => {
   return (
     <div>
       {value}
-      <button onClick={value + 1}>button</button>
+      <button onClick={console.log('clicked the button')}>
+        button
+      </button>
     </div>
   )
 }
