@@ -9,7 +9,6 @@ const App = () => {
 
   const [allClicks, setAll] = useState([])
 
-<<<<<<< HEAD
   const handleLeftClick = () => {
     setAll(allClicks.concat('L'))
     setLeft(left + 1)
@@ -26,10 +25,6 @@ const App = () => {
           the app is used by pressing the buttons
         </div>
       )
-=======
-  const hello = (who) => () => {
-      console.log('hello', who)
->>>>>>> hello-who
     }
   
     return (
